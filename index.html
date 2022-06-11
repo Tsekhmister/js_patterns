@@ -7,7 +7,7 @@
   <title>Just</title>
 </head>
 <body>
-  <a href="https://google.com" id="google-link">
+  <!-- <a href="https://google.com" id="google-link">
     google
   </a>
 
@@ -16,7 +16,7 @@
   </a>
   <header>Header</header>
   <!-- Some comment -->
-  <main>
+  <!-- <br>
    <h1 class="page-title not-active active">Just a example</h1>
       Just a text
     <ul class="items">
@@ -27,7 +27,7 @@
     </ul>
 
     <form action="/api/login" method="POST">
-      <input type="text" placeholder="enter your name">
+      <input type="text" placeholder="enter your name" class="input_class" value="123">
       <button type="button">Log in</button>
 
     </form>
@@ -39,6 +39,23 @@
         </label>
       <button type="button">Log in</button>
 
+    </form> -->
+    <hr>
+    </br>
+    <form id="test_form" hidden>
+      <label>
+        Name:
+        <input type="text" value="123" readonly>
+      </label>
+
+      <label>
+        Remember me:
+        <input type="checkbox" checked>
+      </label>
+           
+      <button type="submit" disabled>
+        Save:
+      </button>
     </form>
   </main>
   <footer>Footer</footer>
@@ -46,3 +63,4 @@
   <script src="./dom.js"></script>
 </body>
 </html>
+

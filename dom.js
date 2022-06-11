@@ -265,4 +265,63 @@ data-attributes - используются для того чтобы храни
 // console.log(label.getAttribute('for'));
 // console.log(label.htmlFor);  // - for являетсф зарезервированным слово м в js , поэтому используем htmlFor 
 
-// 
+// input value
+
+{/*<body>
+    <h1>Just a example</h1>
+    <input type="text" value="123" class="input_class">
+  </body>
+*/}
+
+// const input = document.getElementsByClassName('input_class')[0];
+// // const input2 = document.getElementsByClassName('input_class')[0];
+
+
+// console.log(input.getAttribute('value'));
+// console.log(input.value);
+
+
+// console.log(input.value); - свойство не будет синхронизированно с аттрибутом если поменяется изначальное значение в value
+
+// Стартовое значение при загрузке страницы хранится в аттрибуте, послен изменений значения input пользователем, значение аттрибута не поменялось,  а изменилось значение свойства
+
+
+//Boolean attributes 
+// Аттрибуты у которых есть название но нет значения -называются boolean
+
+{/*
+ <form>
+      <label>
+        Name:
+        <input type="text" value="123" readonly>
+      </label>
+
+      <label>
+        Remember me:
+        <input type="checkbox" checked>
+      </label>
+           
+      <button type="submit" disabled>
+        Save:
+      </button>
+    </form>
+// */}
+
+// const form = document.getElementById('test_form');
+
+// const textfield = document.querySelector('[type=text'); 
+// const checkbox = document.querySelector('[type=checkbox]'); 
+
+// const button = document.querySelector('[type=submit]'); 
+
+// // textfield.removeAttribute('readonly')
+// textfield.readOnly = false;
+
+// console.log(textfield.getAttribute('readonly'));
+// console.log(textfield.readOnly); // if true - we can't change data
+
+// Аттрибут hidden - убирает элемент со страницы
+// Аттрибут readonly - запрещает редактировать значение в инпуте
+// Аттрибут checked - отмечает checkbox или radiobutton галочкой
+// Аттрибут checked - делает элемент не активным
+
