@@ -325,3 +325,44 @@ data-attributes - используются для того чтобы храни
 // Аттрибут checked - отмечает checkbox или radiobutton галочкой
 // Аттрибут checked - делает элемент не активным
 
+
+//*********************************************//
+//Summarizing all parts//////////////////////
+
+{/*
+  <body data-page-id="login-page" data-secret-key="123564899">
+    <a href="/home">Home page</a>
+
+    <h1 class="page-title" title="Learn to code">
+      Some text
+    </h1>
+  <form action="/api/login" method="post">
+    <input value="Serhii" readonly>
+    <label for="remember">
+      <input type="checkbox" id="remember" checked>
+      Remember me
+    </label>
+
+    <button disabled>Save</button>
+  </form>    
+  <script src="./dom.js"></script>
+</body>
+*/}
+
+const body = document.querySelector('body');
+const link = document.querySelector('a');
+const h1 = document.querySelector('h1');
+const form = document.querySelector('form');
+const textField = document.querySelector('input');
+const label = document.querySelector('label');
+const checkbox = document.querySelector('[type=checkbox]');
+const button = document.querySelector('button');
+
+console.log(body.dataset.pageId, body.dataset.secretKey);
+console.log(link.href);
+console.log(h1.title, h1.className, h1.classList.contains('page-title'));
+console.log(form.method, form.action);
+console.log(textField.type, textField.value, textField.readOnly);
+console.log(label.htmlFor);
+console.log(checkbox.id, checkbox.checked);
+console.log(button.type, button.disabled);
