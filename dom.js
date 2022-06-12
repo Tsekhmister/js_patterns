@@ -310,59 +310,59 @@ data-attributes - используются для того чтобы храни
 // const form = document.getElementById('test_form');
 
 // const textfield = document.querySelector('[type=text'); 
-// const checkbox = document.querySelector('[type=checkbox]'); 
+// // const checkbox = document.querySelector('[type=checkbox]'); 
 
-// const button = document.querySelector('[type=submit]'); 
+// // const button = document.querySelector('[type=submit]'); 
 
-// // textfield.removeAttribute('readonly')
-// textfield.readOnly = false;
+// // // textfield.removeAttribute('readonly')
+// // textfield.readOnly = false;
 
-// console.log(textfield.getAttribute('readonly'));
-// console.log(textfield.readOnly); // if true - we can't change data
+// // console.log(textfield.getAttribute('readonly'));
+// // console.log(textfield.readOnly); // if true - we can't change data
 
-// Аттрибут hidden - убирает элемент со страницы
-// Аттрибут readonly - запрещает редактировать значение в инпуте
-// Аттрибут checked - отмечает checkbox или radiobutton галочкой
-// Аттрибут checked - делает элемент не активным
+// // Аттрибут hidden - убирает элемент со страницы
+// // Аттрибут readonly - запрещает редактировать значение в инпуте
+// // Аттрибут checked - отмечает checkbox или radiobutton галочкой
+// // Аттрибут checked - делает элемент не активным
 
 
-//*********************************************//
-//Summarizing all parts//////////////////////
+// //*********************************************//
+// //Summarizing all parts//////////////////////
 
-{/*
-  <body data-page-id="login-page" data-secret-key="123564899">
-    <a href="/home">Home page</a>
+// {/*
+//   <body data-page-id="login-page" data-secret-key="123564899">
+//     <a href="/home">Home page</a>
 
-    <h1 class="page-title" title="Learn to code">
-      Some text
-    </h1>
-  <form action="/api/login" method="post">
-    <input value="Serhii" readonly>
-    <label for="remember">
-      <input type="checkbox" id="remember" checked>
-      Remember me
-    </label>
+//     <h1 class="page-title" title="Learn to code">
+//       Some text
+//     </h1>
+//   <form action="/api/login" method="post">
+//     <input value="Serhii" readonly>
+//     <label for="remember">
+//       <input type="checkbox" id="remember" checked>
+//       Remember me
+//     </label>
 
-    <button disabled>Save</button>
-  </form>    
-  <script src="./dom.js"></script>
-</body>
-*/}
+//     <button disabled>Save</button>
+//   </form>    
+//   <script src="./dom.js"></script>
+// </body>
+// */}
 
-const body = document.querySelector('body');
-const link = document.querySelector('a');
-const h1 = document.querySelector('h1');
-const form = document.querySelector('form');
-const textField = document.querySelector('input');
-const label = document.querySelector('label');
-const checkbox = document.querySelector('[type=checkbox]');
-const button = document.querySelector('button');
+// const body = document.querySelector('body');
+// const link = document.querySelector('a');
+// const h1 = document.querySelector('h1');
+// const form = document.querySelector('form');
+// const textField = document.querySelector('input');
+// const label = document.querySelector('label');
+// const checkbox = document.querySelector('[type=checkbox]');
+// const button = document.querySelector('button');
 
-console.log(body.dataset.pageId, body.dataset.secretKey);
-console.log(link.href);
-console.log(h1.title, h1.className, h1.classList.contains('page-title'));
-console.log(form.method, form.action);
-console.log(textField.type, textField.value, textField.readOnly);
-console.log(label.htmlFor);
-console.log(checkbox.id, checkbox.checked);
-console.log(button.type, button.disabled);
+// console.log(body.dataset.pageId, body.dataset.secretKey);
+// console.log(link.href);
+// console.log(h1.title, h1.className, h1.classList.contains('page-title'));
+// console.log(form.method, form.action);
+// console.log(textField.type, textField.value, textField.readOnly);
+// console.log(label.htmlFor);
+// console.log(checkbox.id, checkbox.checked);
+// console.log(button.type, button.disabled);
